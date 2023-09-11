@@ -22,6 +22,7 @@ namespace ProductApps
     {
         Product cProduct;
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace ProductApps
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment +25);
+                totalChargeAfterWrapTextBlock.Text = Convert.ToString(cProduct.TotalPayment + 25 + 5);
             }
             catch (FormatException)
             {
